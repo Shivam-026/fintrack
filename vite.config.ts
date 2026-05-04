@@ -14,10 +14,8 @@ export default defineConfig({
     },
   },
   vite: {
-    build: {
-      rollupOptions: {
-        external: ["node:fs", "node:path", "node:url"],
-      },
+    ssr: {
+      noExternal: ["@tanstack/react-start"],
     },
   },
 });
