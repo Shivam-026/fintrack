@@ -13,4 +13,11 @@ export default defineConfig({
       preset: "vercel",
     },
   },
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ["node:fs", "node:path", "node:url"],
+      },
+    },
+  },
 });

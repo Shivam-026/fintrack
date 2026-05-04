@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(grep -r preset /Users/shivam.sinha/Downloads/fintrack --include=*.ts --include=*.js --include=*.json)"
+      "Bash(grep -r preset /Users/shivam.sinha/Downloads/fintrack --include=*.ts --include=*.js --include=*.json)",
+      "Bash(npm run:*)",
+      "Bash(find /Users/shivam.sinha/Downloads/fintrack/node_modules/@tanstack -name *.d.ts -type f)",
+      "Bash(xargs cat:*)",
+      "Bash(ls:*)"
     ]
   }
 }
